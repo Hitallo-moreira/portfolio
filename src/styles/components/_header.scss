@@ -1,0 +1,74 @@
+.container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    height: 120px;
+    min-width: 100%;
+    padding-right: 8rem;
+    padding-left: 8rem;
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 100%;
+
+        .left-content {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            color: $default-white;
+            font-size: 48px;
+            font-weight: bold;
+            margin-right: 100px;
+            color: $default-orange;
+        }
+
+        nav {
+            ul {
+                display: flex;
+                gap: 40px;
+
+                li {
+                    list-style: none;
+
+                    a {
+                        text-decoration: none;
+                        color: $default-white;
+                        font-size: $default-font-size;
+                        font-weight: 400;
+                        transition: .3s;
+
+                        &:hover {
+                            color: $default-orange;
+                        }
+                    }
+                }
+            }
+        }
+
+        .action {
+            .btn-download {
+                input {
+                    height: 40px;
+                    width: 145px;
+                    background: transparent;
+                    color: $default-orange;
+                    border: 1px solid $default-orange;
+                    border-radius: 30px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    transition: .3s;
+
+                    &:hover {
+                        background: $default-orange;
+                        color: $default-white;
+                    }
+                }
+            }
+        }
+    }
+}

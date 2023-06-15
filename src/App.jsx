@@ -1,10 +1,10 @@
-import './App.css'
+import Header from './Header'
 import './styles/styles.scss'
 
 function App() {
 
   return (
-    <h1>teste</h1>
+      <Header />
   )
 }
 

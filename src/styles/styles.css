@@ -1,1 +1,68 @@
-/*# sourceMappingURL=styles.css.map */
+@import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800);
+body {
+  background-color: #3D3D3D;
+}
+
+body {
+  font-family: "Manrope", "open sans";
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  height: 120px;
+  min-width: 100%;
+  padding-right: 8rem;
+  padding-left: 8rem;
+}
+.container .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100%;
+}
+.container .content .left-content {
+  display: flex;
+  align-items: center;
+}
+.container .content .logo {
+  color: #FFFFFF;
+  font-size: 48px;
+  font-weight: bold;
+  margin-right: 100px;
+  color: #FFA500;
+}
+.container .content nav ul {
+  display: flex;
+  gap: 40px;
+}
+.container .content nav ul li {
+  list-style: none;
+}
+.container .content nav ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 400;
+  transition: 0.3s;
+}
+.container .content nav ul li a:hover {
+  color: #FFA500;
+}
+.container .content .action .btn-download input {
+  height: 40px;
+  width: 145px;
+  background: transparent;
+  color: #FFA500;
+  border: 1px solid #FFA500;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.container .content .action .btn-download input:hover {
+  background: #FFA500;
+  color: #FFFFFF;
+}/*# sourceMappingURL=styles.css.map */
