@@ -1,5 +1,5 @@
-import Header from './Header'
-import HeroSection from './HeroSection'
+import Header from './components/Header'
+import HeroSection from './components/HeroSection'
 import './styles/styles.scss'
 
 
