@@ -5,7 +5,7 @@ header.container {
     min-width: 100%;
     padding-right: 8rem;
     padding-left: 8rem;
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
 
     .content {
         display: flex;
@@ -23,7 +23,7 @@ header.container {
                 text-decoration: none;
                 font-size: 48px;
                 font-weight: bold;
-                margin-right: 100px;
+                margin-right: 50px;
                 color: $default-orange;
             }
         }
