@@ -4,7 +4,7 @@ function Header() {
             <div className="content">
                 <div className="left-content">
                     <div className="logo">
-                        <p>H</p>
+                        <p><a href="#">H</a></p>
                     </div>
                     <nav>
                         <ul>

@@ -1,12 +1,11 @@
-.container {
+header.container {
     display: flex;
     align-items: center;
-    position: absolute;
-    top: 0;
     height: 120px;
     min-width: 100%;
     padding-right: 8rem;
     padding-left: 8rem;
+    margin-bottom: 7rem;
 
     .content {
         display: flex;
@@ -20,11 +19,13 @@
         }
 
         .logo {
-            color: $default-white;
-            font-size: 48px;
-            font-weight: bold;
-            margin-right: 100px;
-            color: $default-orange;
+            a {
+                text-decoration: none;
+                font-size: 48px;
+                font-weight: bold;
+                margin-right: 100px;
+                color: $default-orange;
+            }
         }
 
         nav {
