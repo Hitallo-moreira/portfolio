@@ -1,3 +1,51 @@
 .hero-section {
-    
+    .name {
+        font-size: 4rem;
+        color: $default-white;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+
+    .name-border {
+        border-top: 1px solid $default-orange;
+        border-width: 5px;
+        width: 57px;
+    }
+
+    .social-network {
+        display: flex;
+        margin-top: 2rem;
+        gap: 10px;
+
+        img {
+            height: auto;
+            width: 32px;
+            color: $default-white;
+        }
+
+        .illustration {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .introduction {
+        margin-top: 2rem;
+        
+        .title {
+            color: $default-white;
+            font-weight: 700;
+            font-size: $default-font-size;
+            width: 70%;
+            margin-bottom: 1rem;
+        }
+
+        .goal {
+            color: $default-gray;
+            font-weight: 400;
+            font-size: 16px;
+            width: 80%;
+        }
+    }
 }
