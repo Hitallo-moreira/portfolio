@@ -1,6 +1,7 @@
 import linkedInLogo from '../assets/linkedin.svg';
 import GithubLogo from '../assets/github.svg';
 import illustration from '../assets/illustration.svg';
+import CustomButton from './Button';
 
 function HeroSection() {
     return (
@@ -24,7 +25,8 @@ function HeroSection() {
                 <div className="col">
                     <section className='introduction'>
                         <h2 className='title'>Transformando linhas de código em experiências digitais.</h2>
-                        <p className='goal'>Meu objetivo é trazer vida para projetos digitais, desenvolvendo soluções criativas que vão    além do código. Transformando ideias em experiências digitais memoráveis.</p>
+                        <p className='goal'>Meu objetivo é trazer vida para projetos digitais, desenvolvendo soluções criativas que vão além do código. Transformando ideias em experiências digitais memoráveis.</p>
+                        <CustomButton value="Saiba Mais" />
                     </section>
                 </div>
             </div>
