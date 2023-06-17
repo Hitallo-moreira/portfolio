@@ -1,6 +1,6 @@
 import Header from './components/Header'
 import HeroSection from './components/HeroSection'
-import './styles/styles.scss'
+import './styles/styles.scss' 
 
 
 function App() {
