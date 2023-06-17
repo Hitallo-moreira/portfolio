@@ -1,4 +1,6 @@
 .hero-section {
+    padding-bottom: 10rem;
+    
     .name {
         font-size: 4rem;
         color: $default-white;
@@ -17,15 +19,23 @@
         margin-top: 2rem;
         gap: 10px;
 
-        img {
-            height: auto;
-            width: 32px;
-            color: $default-white;
+        a {
+            img {
+                height: auto;
+                width: 32px;
+                color: $default-white;
+                transition: .3s;
+    
+                &:hover {
+                    transform: translateY(-3px);
+                }
+            }
         }
 
         .illustration {
             img {
                 width: 100%;
+                user-select: none;
             }
         }
     }
@@ -46,6 +56,15 @@
             font-weight: 400;
             font-size: 16px;
             width: 80%;
+        }
+
+        .learn-more-btn {
+            input {
+                &:hover {
+                    background: $default-orange;
+                    color: $default-white;
+                }
+            }
         }
     }
 }
