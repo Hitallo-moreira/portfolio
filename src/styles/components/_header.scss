@@ -39,7 +39,7 @@ header.container {
                     a {
                         text-decoration: none;
                         color: $default-white;
-                        font-size: $default-font-size;
+                        font-size: 22px;
                         font-weight: 400;
                         transition: .3s;
 
@@ -56,7 +56,6 @@ header.container {
                 &:hover {
                     background: $default-orange;
                     color: $default-white;
-                    transform: translateY(-3px);
                 }
             }
         }
