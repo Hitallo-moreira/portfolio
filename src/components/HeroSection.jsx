@@ -10,7 +10,7 @@ function HeroSection() {
             <div className="name-border"></div>
             <div className="row">
                 <div className="col">
-                    <div className="social-network">
+                    <section className="social-network">
                         <a href="https://github.com/Hitallo-moreira" target="_blank" rel="noopener noreferrer">
                             <img src={GithubLogo} alt="Github Logo" />
                         </a>
@@ -20,7 +20,7 @@ function HeroSection() {
                         <div className="illustration">
                             <img src={illustration} alt="illustration" />
                         </div>
-                    </div>
+                    </section>
                 </div>
                 <div className="col">
                     <section className='introduction'>
