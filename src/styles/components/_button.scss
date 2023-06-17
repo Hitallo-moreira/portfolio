@@ -1,0 +1,12 @@
+.action {
+    input {
+        height: 40px;
+        width: 145px;
+        background: transparent;
+        color: $default-orange;
+        border: 1px solid $default-orange;
+        border-radius: 30px;
+        font-weight: bold;
+        transition: .3s;
+    }
+}
