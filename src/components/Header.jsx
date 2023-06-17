@@ -1,3 +1,5 @@
+import CustomButton from './Button'
+
 function Header() {
     return (      
         <header className="container">
@@ -14,11 +16,9 @@ function Header() {
                         </ul>
                     </nav>
                 </div>
-                <div className="right-content">
-                    <div className="action">
-                        <div className="btn-download">
-                            <input type="submit" value="Baixar CV" />
-                        </div>
+                <div className="right-content">         
+                    <div className="btn-download">
+                        <CustomButton value="Baixar CV" />
                     </div>
                 </div>
             </div>

@@ -51,23 +51,12 @@ header.container {
             }
         }
 
-        .action {
-            .btn-download {
-                input {
-                    height: 40px;
-                    width: 145px;
-                    background: transparent;
-                    color: $default-orange;
-                    border: 1px solid $default-orange;
-                    border-radius: 30px;
-                    font-weight: bold;
-                    cursor: pointer;
-                    transition: .3s;
-
-                    &:hover {
-                        background: $default-orange;
-                        color: $default-white;
-                    }
+        .btn-download {
+            input {
+                &:hover {
+                    background: $default-orange;
+                    color: $default-white;
+                    transform: translateY(-3px);
                 }
             }
         }
