@@ -1,0 +1,54 @@
+.about {
+    background-color: $about-section-background;
+
+    .about-section {
+        padding: 6rem 0 6rem 0;
+
+        .about-align {
+            display: flex;
+
+            .title-line {
+                border-top: 1px solid $default-orange;
+                border-width: 2px;
+                width: 32px;
+                position: relative;
+                top: 11px;
+                margin-right: 8px;
+            }
+    
+            .about-title {
+                color: $default-orange;
+                font-weight: 700;
+                font-size: 16px;
+            }
+        }
+        
+
+        .title {
+            color: $default-white;
+            font-weight: 700;
+            font-size: $default-font-size;
+            width: 70%;
+            margin-bottom: 1rem;
+        }
+
+        .about-me,
+        .my-stacks {
+            color: $default-gray;
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        .about-me {
+            width: 80%;
+        }
+    }
+
+    .slick-slider {
+        width: 20%;
+
+        .slick-active {
+            width: 47px !important;
+        } 
+    }
+}
