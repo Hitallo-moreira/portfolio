@@ -9,10 +9,12 @@ function Footer() {
                     <h1>Entre em contato:</h1>
                     <div className="action">
                         <div className="linkedin">
-                            <CustomButton value="LinkedIn"/>
+                            <CustomButton value="LinkedIn" url="https://www.linkedin.com/in/hitallo-moreira/" openInNewTab={true} />
                         </div>
                         <div className="email">
-                            <CustomButton value="Email" />
+                            <a href="mailto:seuemail@example.com">
+                                <CustomButton value="Email" />
+                            </a>
                         </div>
                     </div>
                 </div>
