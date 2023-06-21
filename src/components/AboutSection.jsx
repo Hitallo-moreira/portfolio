@@ -2,7 +2,7 @@ import MyCarousel from "./Carousel"
 
 function AboutSection() {
     return (
-        <div className="about">
+        <div id="about">
             <div className="container about-section">
                 <div className="about-align">
                     <div className="title-line"></div>
