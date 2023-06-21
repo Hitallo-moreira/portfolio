@@ -1,6 +1,6 @@
 import CustomButton from "./Button"
 
-function Card({ title, desc, image }) {
+function Card({ title, desc, image, link, openInNewTab}) {
     return (
         <div>
             <div className="card">
@@ -9,7 +9,7 @@ function Card({ title, desc, image }) {
                     <h5 className="card-title">{title}</h5>
                     <p className="card-text">{desc}</p>
                     <div className="action">
-                        <CustomButton value="Acessar" />
+                        <CustomButton value="Acessar" url={link} openInNewTab={openInNewTab}/>
                     </div>
                 </div>
             </div>
