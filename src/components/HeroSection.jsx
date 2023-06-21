@@ -27,7 +27,7 @@ function HeroSection() {
                         <h2 className='title'>Transformando linhas de código em experiências digitais.</h2>
                         <p className='goal'>Meu objetivo é trazer vida para projetos digitais, desenvolvendo soluções criativas que vão além do código. Transformando ideias em experiências digitais memoráveis.</p>
                         <div className="learn-more-btn">
-                            <CustomButton value="Saiba Mais" />
+                            <CustomButton value="Saiba Mais" url="#about" />
                         </div>
                     </section>
                 </div>

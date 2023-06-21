@@ -1,7 +1,9 @@
-const CustomButton = ({ value }) => {
+const CustomButton = ({ value, url }) => {
   return (
     <div className="action">
-      <input type="submit" value={value} />
+      <a href={url}>
+        <input type="submit" value={value} />
+      </a>
     </div>
   )
 }
