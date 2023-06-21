@@ -5,7 +5,7 @@ import todo from '../assets/todo.png'
 
 function Project() {
     return (
-        <div className="container project-section">
+        <div className="container project-section" id='projects'>
             <div className="section-title">
                 <h1>Projetos</h1>
             </div>
