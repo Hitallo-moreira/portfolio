@@ -42,13 +42,14 @@
         .about-me {
             width: 80%;
         }
-    }
 
-    .slick-slider {
-        width: 20%;
-
-        .slick-active {
-            width: 47px !important;
-        } 
+        .stacks {
+            .slick-slider {
+                div {
+                    width: 300px;
+                    outline: none;
+                }
+            }
+        }
     }
 }

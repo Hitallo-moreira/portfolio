@@ -21,10 +21,6 @@ function AboutSection() {
                             <p className="my-stacks">
                                 Possuo conhecimento nas seguintes tecnologias:
                             </p>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col">
                             <div className="carousel">
                                 <MyCarousel />  
                             </div>
