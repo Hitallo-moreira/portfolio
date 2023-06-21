@@ -52,11 +52,23 @@ footer {
 
         .logo {
             a {
-                text-decoration: none;
-                font-size: $default-font-size;
-                font-weight: bold;
-                margin-right: 50px;
-                color: $default-orange;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 40px;
+                width: 40px;
+                border-radius: 50px;
+                background-color: $default-orange;
+                transition: .3s;
+
+                &:hover {
+                    background-color: #ec9a00;
+                }
+
+                img {
+                    height: 17px;
+                    height: 17px;
+                }
             }
         }
     }

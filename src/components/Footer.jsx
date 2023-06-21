@@ -1,5 +1,6 @@
 import CustomButton from './Button'
 import github from '../assets/github.svg'
+import arrow from '../assets/arrow-up.svg'
 
 function Footer() {
     return (
@@ -19,7 +20,9 @@ function Footer() {
                     </div>
                 </div>
                 <div className="logo">
-                    <p><a href="#">H</a></p>
+                    <a href="#">
+                        <img src={arrow} alt="arrow up" />
+                    </a>
                 </div>
             </div>
             <div className="codeby">
