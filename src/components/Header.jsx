@@ -1,4 +1,5 @@
 import CustomButton from './Button'
+import file from '../assets/CvHitallo.Feitosa.pdf';
 
 function Header() {
     return (      
@@ -18,7 +19,7 @@ function Header() {
                 </div>
                 <div className="right-content">         
                     <div className="btn-download">
-                        <CustomButton value="Baixar CV" />
+                        <CustomButton value="Baixar CV" isDownloadButton={true} file={file} />
                     </div>
                 </div>
             </div>
