@@ -2,4 +2,20 @@
 @import './base/typography';
 @import './components/header';
 @import './components/hero-section';
+@import './components/about-section';
+@import './components/project-section';
 @import './components/button';
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #e69603;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #e7e4e410;
+}
+  

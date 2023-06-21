@@ -1,0 +1,62 @@
+.project-section {
+    .section-title {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 4rem 0 4rem 0;
+
+        h1 {
+            color: $default-white;
+            font-size: $default-font-size;
+            font-weight: 700;
+            border-bottom: 1px solid $default-orange;
+            border-width: 5px;
+            width: 32px;
+        }
+    }
+
+    .card {
+        width: 18rem;
+        background: none;
+        border: none;
+
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            color: $default-white;
+
+            .card-title {
+                text-align: center;
+                font-weight: 700;
+            }
+
+            .card-text {
+                font-size: 16px;
+                color: $default-gray;
+                font-weight: 400;
+            }
+
+            .action {
+                display: flex;
+                justify-content: center;
+
+                input {
+                    &:hover {
+                        background: $default-orange;
+                        color: $default-white;
+                    }
+                }
+            }
+        }
+    }
+
+    .projects-cards {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 4rem;
+    }
+}
