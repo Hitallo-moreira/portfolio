@@ -1,7 +1,7 @@
 import Card from './Card'
-import rating from '../assets/rating.png'
-import wheater from '../assets/wheater.png'
-import todo from '../assets/todo.png'
+import rating from '../assets/images/rating.png'
+import wheater from '../assets/images/wheater.png'
+import todo from '../assets/images/todo.png'
 
 function Project() {
     return (

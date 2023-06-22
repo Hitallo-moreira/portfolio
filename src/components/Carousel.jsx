@@ -1,13 +1,13 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import html from '../assets/html.svg'
-import css from '../assets/css.svg'
-import js from '../assets/js.svg'
-import react from '../assets/react.svg'
-import vue from '../assets/vue.svg'
-import sass from '../assets/sass.svg'
-import git from '../assets/git.svg'
+import html from '../assets/images/html.svg'
+import css from '../assets/images/css.svg'
+import js from '../assets/images/js.svg'
+import react from '../assets/images/react.svg'
+import vue from '../assets/images/vue.svg'
+import sass from '../assets/images/sass.svg'
+import git from '../assets/images/git.svg'
 
 const MyCarousel = () => {
     const settings = {

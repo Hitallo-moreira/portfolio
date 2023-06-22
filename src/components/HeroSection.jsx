@@ -1,6 +1,6 @@
-import linkedInLogo from '../assets/linkedin.svg';
-import GithubLogo from '../assets/github.svg';
-import illustration from '../assets/illustration.svg';
+import linkedInLogo from '../assets/images/linkedin.svg';
+import GithubLogo from '../assets/images/github.svg';
+import illustration from '../assets/images/illustration.svg';
 import CustomButton from './Button';
 
 function HeroSection() {

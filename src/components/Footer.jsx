@@ -1,6 +1,6 @@
 import CustomButton from './Button'
-import github from '../assets/github.svg'
-import arrow from '../assets/arrow-up.svg'
+import github from '../assets/images/github.svg'
+import arrow from '../assets/images/arrow-up.svg'
 
 function Footer() {
     return (
