@@ -82,3 +82,34 @@ footer {
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    footer {
+        .footer-info {
+            .contact-section {
+                margin: 2rem 0 4rem 0;
+
+                h1 {
+                    font-size: 20px;
+                }
+
+                .action {
+                    .linkedin,
+                    .email {
+                        input {
+                            width: 135px;
+                        }
+                    }
+                }
+            }
+
+            .logo {
+                a {
+                    position: relative;
+                    bottom: 40px;
+                    right: 40px;
+                }
+            }
+        }
+    }
+}
