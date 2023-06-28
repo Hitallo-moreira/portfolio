@@ -6,6 +6,11 @@ function Footer() {
     return (
         <footer>
             <div className="container footer-info">
+                <div className="logo">
+                    <a href="#">
+                        <img src={arrow} alt="arrow up" />
+                    </a>
+                </div>
                 <div className="contact-section" id='contact'>
                     <h1>Entre em contato:</h1>
                     <div className="action">
@@ -18,11 +23,6 @@ function Footer() {
                             </a>
                         </div>
                     </div>
-                </div>
-                <div className="logo">
-                    <a href="#">
-                        <img src={arrow} alt="arrow up" />
-                    </a>
                 </div>
             </div>
             <div className="codeby">

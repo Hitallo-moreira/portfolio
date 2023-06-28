@@ -86,6 +86,9 @@ footer {
 @media only screen and (max-width: 768px) {
     footer {
         .footer-info {
+            flex-direction: column;
+            padding-top: 2rem;
+
             .contact-section {
                 margin: 2rem 0 4rem 0;
 
@@ -104,11 +107,8 @@ footer {
             }
 
             .logo {
-                a {
-                    position: relative;
-                    bottom: 40px;
-                    right: 40px;
-                }
+                display: flex;
+                justify-content: flex-end;
             }
         }
     }
