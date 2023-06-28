@@ -1,4 +1,4 @@
-header.container {
+header {
     display: flex;
     align-items: center;
     height: 120px;
@@ -54,6 +54,27 @@ header.container {
                     background: $default-orange;
                     color: $default-white;
                 }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .mobile-header {
+        display: flex;
+        justify-content: center;
+        height: 70px;
+        width: 100%;
+        margin-bottom: 2rem;
+
+        .logo {
+            height: 100%;
+            
+            a {
+                text-decoration: none;
+                font-size: 48px;
+                font-weight: bold;
+                color: $default-orange;
             }
         }
     }
