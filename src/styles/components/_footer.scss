@@ -50,7 +50,7 @@ footer {
             }
         }
 
-        .logo {
+        .back-to-top {
             a {
                 display: flex;
                 align-items: center;
@@ -86,7 +86,7 @@ footer {
 @media only screen and (max-width: 768px) {
     footer {
         .footer-info {
-            flex-direction: column;
+            flex-direction: column-reverse;
             padding-top: 2rem;
 
             .contact-section {
@@ -106,7 +106,7 @@ footer {
                 }
             }
 
-            .logo {
+            .back-to-top {
                 display: flex;
                 justify-content: flex-end;
             }
