@@ -13,7 +13,7 @@ function Footer() {
                             <CustomButton value="LinkedIn" url="https://www.linkedin.com/in/hitallo-moreira/" openInNewTab={true} />
                         </div>
                         <div className="email">
-                            <a href="mailto:seuemail@example.com">
+                            <a href="mailto:hitallomoreira13@gmail.com">
                                 <CustomButton value="Email" />
                             </a>
                         </div>
