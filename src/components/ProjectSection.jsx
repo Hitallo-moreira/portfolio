@@ -36,7 +36,7 @@ function Project() {
     infinite: true,
     speed: 500,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 4000,
     slidesToShow: slidesToShow,
   };
 
