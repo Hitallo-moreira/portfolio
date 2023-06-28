@@ -239,7 +239,7 @@ header .content .btn-download input:hover {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 4rem 0 4rem 0;
+  padding: 4rem 0 2rem 0;
 }
 .project-section .section-title h1 {
   color: #FFFFFF;
@@ -415,7 +415,7 @@ footer .footer-info .contact-section .action .email input:hover {
   border: 1px solid #fa4c3f;
   color: #FFFFFF;
 }
-footer .footer-info .logo a {
+footer .footer-info .back-to-top a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -425,10 +425,10 @@ footer .footer-info .logo a {
   background-color: #FFA500;
   transition: 0.3s;
 }
-footer .footer-info .logo a:hover {
+footer .footer-info .back-to-top a:hover {
   background-color: #ec9a00;
 }
-footer .footer-info .logo a img {
+footer .footer-info .back-to-top a img {
   height: 17px;
   height: 17px;
 }
@@ -442,7 +442,7 @@ footer .codeby p {
 
 @media only screen and (max-width: 768px) {
   footer .footer-info {
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding-top: 2rem;
   }
   footer .footer-info .contact-section {
@@ -455,9 +455,17 @@ footer .codeby p {
   footer .footer-info .contact-section .action .email input {
     width: 135px;
   }
-  footer .footer-info .logo {
+  footer .footer-info .back-to-top {
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 2rem;
+  }
+  footer .footer-info .back-to-top a {
+    height: 50px;
+    width: 50px;
+  }
+  footer .codeby {
+    margin-top: 4rem;
   }
 }
 .action input {

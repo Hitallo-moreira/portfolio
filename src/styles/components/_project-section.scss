@@ -1,10 +1,12 @@
 .project-section {
+    padding-bottom: 2rem;
+    
     .section-title {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        padding: 4rem 0 4rem 0;
+        padding: 4rem 0 2rem 0;
 
         h1 {
             color: $default-white;
@@ -62,8 +64,6 @@
 
 @media only screen and (max-width: 768px) {
     .project-section {
-        padding-bottom: 3rem;
-
         .section-title {
             padding: 3rem 0 2rem 0;
 
@@ -73,8 +73,8 @@
         }
 
         .card {
-            margin-left: 4px;
-
+            margin-left: 3px;
+            
             .card-body {
                 .card-text {
                     text-align: center;
