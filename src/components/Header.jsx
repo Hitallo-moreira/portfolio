@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import CustomButton from './Button';
-import file from '../assets/CVHitallo.Feitosa.pdf';
+import file from '../assets/CvHitallo.Feitosa.pdf';
 import { useMediaQuery } from 'react-responsive';
 
 function Header() {
