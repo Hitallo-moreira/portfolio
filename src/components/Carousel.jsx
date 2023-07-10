@@ -8,6 +8,7 @@ import react from '../assets/images/react.svg'
 import vue from '../assets/images/vue.svg'
 import sass from '../assets/images/sass.svg'
 import git from '../assets/images/git.svg'
+import magento  from '../assets/images/magento.svg'
 
 const MyCarousel = () => {
     const settings = {
@@ -42,6 +43,9 @@ const MyCarousel = () => {
             </div>
             <div>
                 <img src={git} alt="Git Icon" />
+            </div>
+            <div>
+                <img src={magento} alt="Magento Icon" />
             </div>
         </Slider>
     )
