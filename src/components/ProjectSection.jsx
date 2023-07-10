@@ -51,7 +51,7 @@ function Project() {
             title="Weather.io"
             desc="Uma aplicação de previsão do tempo. Planeje seu dia com confiança e esteja preparado para qualquer condição climática!"
             image={wheater}
-            link="https://wheterio.netlify.app/"
+            link="https://hweatherio.netlify.app/"
             openInNewTab={true}
           />
         </div>
