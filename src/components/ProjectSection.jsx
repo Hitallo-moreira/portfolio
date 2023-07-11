@@ -4,7 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Card from './Card';
 import rating from '../assets/images/rating.png';
-import wheater from '../assets/images/wheater.png';
+import wheater from '../assets/images/weatherio.png';
 import todo from '../assets/images/todo.png';
 
 function Project() {
