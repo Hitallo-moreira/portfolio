@@ -48,11 +48,16 @@ header {
             }
         }
 
-        .btn-download {
-            input {
-                &:hover {
-                    background: $default-orange;
-                    color: $default-white;
+        .right-content {
+            display: flex;
+            margin-bottom: 10px;
+
+            .btn-download {
+                input {
+                    &:hover {
+                        background: $default-orange;
+                        color: $default-white;
+                    }
                 }
             }
         }

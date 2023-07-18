@@ -3,8 +3,10 @@ import linkedInLogo from '../assets/images/linkedin.svg';
 import GithubLogo from '../assets/images/github.svg';
 import illustration from '../assets/images/illustration.svg';
 import CustomButton from './Button';
+import { useTranslation } from 'react-i18next';
 
 function HeroSection() {
+  const { t } = useTranslation();
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -40,10 +42,10 @@ function HeroSection() {
         </div>
         <div className="col">
           <section className='introduction'>
-            <h2 className='title'>{isMobile ? 'Transformando códigos em experiências digitais.' : 'Transformando linhas de código em experiências digitais.'}</h2>
-            <p className='goal'>{isMobile ? 'desenvolvendo soluções criativas que vão além do código. Transformando ideias em experiências memoráveis.' : 'Meu objetivo é trazer vida para projetos digitais, desenvolvendo soluções criativas que vão além do código. Transformando ideias em experiências digitais memoráveis.'}</p>
+            <h2 className='title'>{isMobile ? t('Turning lines of code into digital experiences.') : t('Turning lines of code into digital experiences.')}</h2>
+            <p className='goal'>{isMobile ? t('Developing creative solutions that go beyond code. Turning ideas into memorable experiences.') : t('My goal is to bring life to digital projects by developing creative solutions that go beyond code. Turning ideas into memorable digital experiences.')}</p>
             <div className="learn-more-btn">
-              <CustomButton value="Saiba Mais" url="#about" />
+              <CustomButton value={t("Learn More")} url="#about" />
             </div>
           </section>
         </div>

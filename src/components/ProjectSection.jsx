@@ -6,8 +6,10 @@ import Card from './Card';
 import rating from '../assets/images/rating.png';
 import wheater from '../assets/images/weatherio.png';
 import todo from '../assets/images/todo.png';
+import { useTranslation } from 'react-i18next';
 
 function Project() {
+  const { t } = useTranslation();
   const [slidesToShow, setSlidesToShow] = useState(3);
 
   useEffect(() => {
@@ -43,13 +45,13 @@ function Project() {
   return (
     <div className="container project-section" id="projects">
       <div className="section-title">
-        <h1>Projetos</h1>
+        <h1>{t("Projects")}</h1>
       </div>
       <Slider {...settings}>
         <div className="weather-project">
           <Card
             title="Weather.io"
-            desc="Uma aplicação de previsão do tempo. Planeje seu dia com confiança e esteja preparado para qualquer condição climática!"
+            desc={t("A weather forecast application. Plan your day with confidence and be prepared for any weather condition!")}
             image={wheater}
             link="https://hweatherio.netlify.app/"
             openInNewTab={true}
@@ -57,8 +59,8 @@ function Project() {
         </div>
         <div className="rating-project">
           <Card
-            title="Rating Component"
-            desc="Um componente de avaliação que permite que os usuários compartilhem suas opiniões e classifiquem suas experiências."
+            title={t("Rating Component")}
+            desc={t("A review component that allows users to share their opinions and rate their experiences.")}
             image={rating}
             link="https://hratingcomponent.netlify.app/"
             openInNewTab={true}
@@ -67,7 +69,7 @@ function Project() {
         <div className="todo-list-project">
           <Card
             title="to-do-list"
-            desc="Organize sua vida com facilidade! A to-do list é a solução perfeita para você planejar, priorizar e conquistar todas as suas tarefas."
+            desc={t("Organize your life with ease! A to-do list is the perfect solution for you to plan, prioritize and conquer all your tasks.")}
             image={todo}
             link="https://htodolsist.netlify.app/"
             openInNewTab={true}

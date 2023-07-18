@@ -1,6 +1,9 @@
-import CustomButton from "./Button"
+import CustomButton from "./Button";
+import { useTranslation } from 'react-i18next';
 
 function Card({ title, desc, image, link, openInNewTab}) {
+    const {t} = useTranslation();
+
     return (
         <div>
             <div className="card">
@@ -9,7 +12,7 @@ function Card({ title, desc, image, link, openInNewTab}) {
                     <h5 className="card-title">{title}</h5>
                     <p className="card-text">{desc}</p>
                     <div className="action">
-                        <CustomButton value="Acessar" url={link} openInNewTab={openInNewTab}/>
+                        <CustomButton value={t("Access")} url={link} openInNewTab={openInNewTab}/>
                     </div>
                 </div>
             </div>
