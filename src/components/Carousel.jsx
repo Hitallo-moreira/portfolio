@@ -7,7 +7,7 @@ import js from '../assets/images/js.svg'
 import react from '../assets/images/react.svg'
 import vue from '../assets/images/vue.svg'
 import sass from '../assets/images/sass.svg'
-import bootstrap from '../assets/images/bootstrap.svg'
+import bootstrap from '../assets/images/bootstrap.png'
 import git from '../assets/images/git.svg'
 import magento  from '../assets/images/magento.svg'
 
@@ -43,7 +43,7 @@ const MyCarousel = () => {
                 <img src={sass} alt="Sass Icon" />
             </div>
             <div>
-                <img src={bootstrap} alt="Magento Icon" />
+                <img src={bootstrap} alt="Bootstrap Icon" />
             </div>
             <div>
                 <img src={git} alt="Git Icon" />
