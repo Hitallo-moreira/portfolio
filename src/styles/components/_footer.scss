@@ -50,7 +50,7 @@ footer {
             }
         }
 
-        .logo {
+        .back-to-top {
             a {
                 display: flex;
                 align-items: center;
@@ -86,8 +86,11 @@ footer {
 @media only screen and (max-width: 768px) {
     footer {
         .footer-info {
+            flex-direction: column-reverse;
+            padding-top: 2rem;
+
             .contact-section {
-                margin: 2rem 0 4rem 0;
+                margin: 0 auto;
 
                 h1 {
                     font-size: 20px;
@@ -103,13 +106,20 @@ footer {
                 }
             }
 
-            .logo {
+            .back-to-top {
+                display: flex;
+                justify-content: flex-end;
+                margin-bottom: 2rem;
+
                 a {
-                    position: relative;
-                    bottom: 40px;
-                    right: 40px;
+                    height: 50px;
+                    width: 50px;
                 }
             }
+        }
+
+        .codeby {
+            margin-top: 4rem;
         }
     }
 }

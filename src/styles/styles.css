@@ -1,57 +1,474 @@
 @import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800);
 body {
-  background-color: #3D3D3D;
-}
-
-body {
   font-family: "Manrope", "open sans";
 }
 
-.container {
+header {
   display: flex;
   align-items: center;
-  position: absolute;
-  top: 0;
   height: 120px;
-  min-width: 100%;
-  padding-right: 8rem;
-  padding-left: 8rem;
+  margin-bottom: 4rem;
 }
-.container .content {
+header .content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-width: 100%;
 }
-.container .content .left-content {
+header .content .left-content {
   display: flex;
   align-items: center;
 }
-.container .content .logo {
-  color: #FFFFFF;
+header .content .logo a {
+  text-decoration: none;
   font-size: 48px;
   font-weight: bold;
-  margin-right: 100px;
+  margin-right: 50px;
   color: #FFA500;
 }
-.container .content nav ul {
+header .content nav ul {
   display: flex;
   gap: 40px;
 }
-.container .content nav ul li {
+header .content nav ul li {
   list-style: none;
 }
-.container .content nav ul li a {
+header .content nav ul li a {
   text-decoration: none;
   color: #FFFFFF;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 400;
   transition: 0.3s;
 }
-.container .content nav ul li a:hover {
+header .content nav ul li a:hover {
   color: #FFA500;
 }
-.container .content .action .btn-download input {
+header .content .btn-download input:hover {
+  background: #FFA500;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 768px) {
+  .mobile-header {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .mobile-header .logo {
+    height: 100%;
+  }
+  .mobile-header .logo a {
+    text-decoration: none;
+    font-size: 48px;
+    font-weight: bold;
+    color: #FFA500;
+  }
+}
+.hero-section {
+  padding-bottom: 10rem;
+}
+.hero-section .name {
+  font-size: 4rem;
+  color: #FFFFFF;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.hero-section .name-border {
+  border-top: 1px solid #FFA500;
+  border-width: 5px;
+  width: 57px;
+}
+.hero-section .social-network {
+  display: flex;
+  margin-top: 2rem;
+  gap: 10px;
+}
+.hero-section .social-network a img {
+  height: auto;
+  width: 32px;
+  color: #FFFFFF;
+  transition: 0.3s;
+}
+.hero-section .social-network a img:hover {
+  transform: translateY(-3px);
+}
+.hero-section .social-network .illustration img {
+  width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.hero-section .introduction {
+  margin-top: 2rem;
+}
+.hero-section .introduction .title {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 24px;
+  width: 70%;
+  margin-bottom: 1rem;
+}
+.hero-section .introduction .goal {
+  color: #CCCCCC;
+  font-weight: 400;
+  font-size: 16px;
+  width: 80%;
+}
+.hero-section .introduction .learn-more-btn input:hover {
+  background: #FFA500;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-section {
+    padding-bottom: 5rem;
+  }
+  .hero-section .name {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .hero-section .name-border {
+    margin: 0 auto;
+  }
+  .hero-section .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-section .social-network {
+    display: none;
+  }
+  .hero-section .introduction .title,
+  .hero-section .introduction .goal {
+    text-align: center;
+    width: 100%;
+  }
+  .hero-section .introduction .title {
+    font-size: 20px;
+  }
+  .hero-section .introduction .goal {
+    margin: 0 auto;
+    width: 90%;
+    padding: 0 10px 0 10px;
+  }
+  .hero-section .introduction .learn-more-btn {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+  }
+  .hero-section .introduction .learn-more-btn .action a input {
+    width: 170px;
+  }
+}
+#about {
+  background-color: #4B4B4B;
+}
+#about .about-section {
+  padding: 6rem 0 6rem 0;
+}
+#about .about-section .about-align {
+  display: flex;
+}
+#about .about-section .about-align .title-line {
+  border-top: 1px solid #FFA500;
+  border-width: 2px;
+  width: 32px;
+  position: relative;
+  top: 11px;
+  margin-right: 8px;
+}
+#about .about-section .about-align .about-title {
+  color: #FFA500;
+  font-weight: 700;
+  font-size: 16px;
+}
+#about .about-section .my-info {
+  display: flex;
+}
+#about .about-section .my-info .info {
+  width: 50%;
+}
+#about .about-section .my-info .info .about-me {
+  width: 80%;
+}
+#about .about-section .title {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 24px;
+  width: 70%;
+  margin-bottom: 1rem;
+}
+#about .about-section .about-me,
+#about .about-section .my-stacks {
+  color: #CCCCCC;
+  font-weight: 400;
+  font-size: 16px;
+}
+#about .about-section .tech .stacks .slick-slider div {
+  width: 300px;
+  outline: none;
+}
+
+@media only screen and (max-width: 768px) {
+  #about .about-section {
+    width: calc(100% - 24px);
+    padding: 3rem 0 3rem 0;
+  }
+  #about .about-section .my-info {
+    display: block;
+  }
+  #about .about-section .my-info .info {
+    width: 100%;
+  }
+  #about .about-section .my-info .info .about-me {
+    width: 100%;
+    margin-bottom: 1.25rem;
+  }
+  #about .about-section .title,
+  #about .about-section .about-me {
+    width: 100%;
+  }
+  #about .about-section .title {
+    font-size: 20px;
+  }
+}
+.project-section .section-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0 2rem 0;
+}
+.project-section .section-title h1 {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 700;
+  border-bottom: 1px solid #FFA500;
+  border-width: 5px;
+}
+.project-section .card {
+  width: 18rem;
+  background: none;
+  border: none;
+}
+.project-section .card .card-img-top {
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.project-section .card .card-body {
+  color: #FFFFFF;
+}
+.project-section .card .card-body .card-title {
+  text-align: center;
+  font-weight: 700;
+}
+.project-section .card .card-body .card-text {
+  font-size: 16px;
+  color: #CCCCCC;
+  font-weight: 400;
+}
+.project-section .card .card-body .action {
+  display: flex;
+  justify-content: center;
+}
+.project-section .card .card-body .action input:hover {
+  background: #FFA500;
+  color: #FFFFFF;
+}
+.project-section .projects-cards {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .project-section {
+    padding-bottom: 3rem;
+  }
+  .project-section .section-title {
+    padding: 3rem 0 2rem 0;
+  }
+  .project-section .section-title h1 {
+    font-size: 20px;
+  }
+  .project-section .card .card-body .card-text {
+    text-align: center;
+  }
+}
+.bm-burger-button {
+  position: absolute;
+  width: 36px;
+  height: 30px;
+  left: 29px;
+  top: 22px;
+}
+
+.bm-burger-bars {
+  background: #FFA500;
+}
+
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+  top: 23px !important;
+  right: 10px !important;
+}
+
+.bm-cross {
+  background: #FFA500;
+  width: 4px !important;
+  height: 20px !important;
+}
+
+.bm-menu-wrap.mobile-menu {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.bm-menu {
+  background: #383838;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+.bm-item {
+  display: inline-block;
+}
+
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .mobile-menu .menu-item,
+  .mobile-menu .download {
+    font-size: 20px;
+    text-decoration: none;
+    margin-bottom: 8px;
+  }
+  .mobile-menu .menu-item {
+    color: #FFFFFF;
+  }
+  .mobile-menu .download {
+    color: #FFA500;
+    font-weight: 600;
+  }
+}
+footer {
+  height: 350px;
+  background-color: #4B4B4B;
+}
+footer .footer-info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4rem;
+}
+footer .footer-info .contact-section {
+  margin-bottom: 6rem;
+}
+footer .footer-info .contact-section h1 {
+  color: #FFFFFF;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+footer .footer-info .contact-section .action {
+  display: flex;
+  gap: 20px;
+}
+footer .footer-info .contact-section .action .linkedin input {
+  background: #0274B3;
+  border: 1px solid #0274B3;
+  color: #FFFFFF;
+}
+footer .footer-info .contact-section .action .linkedin input:hover {
+  background: #0080c5;
+  border: 1px solid #0080c5;
+}
+footer .footer-info .contact-section .action .email input {
+  background: #F14336;
+  border: 1px solid #F14336;
+  color: #FFFFFF;
+}
+footer .footer-info .contact-section .action .email input:hover {
+  background: #fa4c3f;
+  border: 1px solid #fa4c3f;
+  color: #FFFFFF;
+}
+footer .footer-info .back-to-top a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  background-color: #FFA500;
+  transition: 0.3s;
+}
+footer .footer-info .back-to-top a:hover {
+  background-color: #ec9a00;
+}
+footer .footer-info .back-to-top a img {
+  height: 17px;
+  height: 17px;
+}
+footer .codeby {
+  text-align: center;
+}
+footer .codeby p {
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+  footer .footer-info {
+    flex-direction: column-reverse;
+    padding-top: 2rem;
+  }
+  footer .footer-info .contact-section {
+    margin: 0 auto;
+  }
+  footer .footer-info .contact-section h1 {
+    font-size: 20px;
+  }
+  footer .footer-info .contact-section .action .linkedin input,
+  footer .footer-info .contact-section .action .email input {
+    width: 135px;
+  }
+  footer .footer-info .back-to-top {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+  }
+  footer .footer-info .back-to-top a {
+    height: 50px;
+    width: 50px;
+  }
+  footer .codeby {
+    margin-top: 4rem;
+  }
+}
+.action input {
   height: 40px;
   width: 145px;
   background: transparent;
@@ -59,10 +476,22 @@ body {
   border: 1px solid #FFA500;
   border-radius: 30px;
   font-weight: bold;
-  cursor: pointer;
   transition: 0.3s;
 }
-.container .content .action .btn-download input:hover {
-  background: #FFA500;
-  color: #FFFFFF;
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e69603;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(231, 228, 228, 0.062745098);
+}
+
+body {
+  background-color: #3D3D3D;
 }/*# sourceMappingURL=styles.css.map */

@@ -3,8 +3,12 @@ import { slide as Menu } from 'react-burger-menu';
 import CustomButton from './Button';
 import file from '../assets/CvHitallo.Feitosa.pdf';
 import { useMediaQuery } from 'react-responsive';
+import { useTranslation } from 'react-i18next';
+import LanguageSwitcher  from './LanguageSwitcher';
 
 function Header() {
+  const { t } = useTranslation();
+
   const isMobile = useMediaQuery({ maxWidth: 767 });
   const [isOpen, setIsOpen] = useState(false);
 
@@ -20,15 +24,16 @@ function Header() {
             <p><a href="#">H</a></p>
           </div>
           <Menu left width={'250px'} className="mobile-menu" isOpen={isOpen} onStateChange={state => setIsOpen(state.isOpen)}>
-            <a className='download' href={file} download onClick={handleMenuClose}>Baixar CV</a>
+            <LanguageSwitcher />
+            <a className='download' href={file} download onClick={handleMenuClose}>{t("Download CV")}</a>
             <a className="menu-item" href="#about" onClick={handleMenuClose}>
-              Sobre
+              <p>{t("About")}</p>
             </a>
             <a className="menu-item" href="#projects" onClick={handleMenuClose}>
-              Projetos
+              <p>{t("Projects")}</p>
             </a>
             <a className="menu-item" href="#contact" onClick={handleMenuClose}>
-              Contato
+              <p>{t("Contact")}</p>
             </a>
           </Menu>
         </header>
@@ -41,9 +46,9 @@ function Header() {
               </div>
               <nav>
                 <ul>
-                  <li><a href="#about">Sobre</a></li>
-                  <li><a href="#projects">Projetos</a></li>
-                  <li><a href="#contact">Contato</a></li>
+                  <li><a href="#about">{t("About")}</a></li>
+                  <li><a href="#projects">{t("Projects")}</a></li>
+                  <li><a href="#contact">{t("Contact")}</a></li>
                 </ul>
               </nav>
             </div>

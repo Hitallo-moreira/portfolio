@@ -3,7 +3,6 @@
     width: 36px;
     height: 30px;
     left: 29px;
-    top: 22px;
 }
 
 .bm-burger-bars {
@@ -11,20 +10,20 @@
 }
 
 .bm-burger-bars-hover {
-    background: #a90000;
+    background: none;
 }
 
 .bm-cross-button {
     height: 24px;
     width: 24px;
-    top: 23px !important; 
+    top: 34px !important; 
     right: 10px !important;
 }
 
 .bm-cross {
     background: $default-orange;
     width: 4px !important;
-    height: 20px !important;
+    height: 27px !important;
 }
 
 .bm-menu-wrap.mobile-menu {
@@ -46,7 +45,7 @@
 
 .bm-item-list {
     color: #b8b7ad;
-    padding: 0.8em;
+    padding: 1.6em 0.8em;
 }
 
 .bm-item {
@@ -65,7 +64,7 @@
         .download {
             font-size: 20px;
             text-decoration: none;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
         
         .menu-item {
@@ -75,6 +74,7 @@
         .download {
             color: $default-orange;
             font-weight: 600;
+            margin: 1rem 0 1rem 0;
         }
     }
 }

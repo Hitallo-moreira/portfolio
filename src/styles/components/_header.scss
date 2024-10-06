@@ -48,11 +48,16 @@ header {
             }
         }
 
-        .btn-download {
-            input {
-                &:hover {
-                    background: $default-orange;
-                    color: $default-white;
+        .right-content {
+            display: flex;
+            margin-bottom: 10px;
+
+            .btn-download {
+                input {
+                    &:hover {
+                        background: $default-orange;
+                        color: $default-white;
+                    }
                 }
             }
         }
@@ -65,10 +70,11 @@ header {
         justify-content: center;
         height: 70px;
         width: 100%;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
 
         .logo {
             height: 100%;
+            margin-top: 30px;
             
             a {
                 text-decoration: none;

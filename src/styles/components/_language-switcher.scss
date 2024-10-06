@@ -1,0 +1,21 @@
+.flags {
+    margin-right: 10px;
+
+    img {
+        height: auto;
+        width: 40px;
+        cursor: pointer;
+        margin-right: 5px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .flags {
+        position: absolute;
+        top: 34px;
+
+        img {
+            width: 45px;
+        }
+    }
+}
