@@ -25,7 +25,6 @@ function Header() {
           </div>
           <Menu left width={'250px'} className="mobile-menu" isOpen={isOpen} onStateChange={state => setIsOpen(state.isOpen)}>
             <LanguageSwitcher />
-            <a className='download' href={file} download onClick={handleMenuClose}>{t("Download CV")}</a>
             <a className="menu-item" href="#about" onClick={handleMenuClose}>
               <p>{t("About")}</p>
             </a>
