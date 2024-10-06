@@ -52,6 +52,9 @@ function Header() {
                 </ul>
               </nav>
             </div>
+            <div className="right-content">
+              <LanguageSwitcher />
+            </div>
           </div>
         </header>
       )}
