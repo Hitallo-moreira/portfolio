@@ -47,11 +47,6 @@ function Header() {
                 </ul>
               </nav>
             </div>
-            <div className="right-content">
-              <div className="btn-download">
-                <CustomButton value="Baixar CV" isDownloadButton={true} file={file} />
-              </div>
-            </div>
           </div>
         </header>
       )}
