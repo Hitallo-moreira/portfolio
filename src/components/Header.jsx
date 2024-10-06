@@ -52,12 +52,6 @@ function Header() {
                 </ul>
               </nav>
             </div>
-            <div className="right-content">
-              <LanguageSwitcher />
-              <div className="btn-download">
-                <CustomButton value={t("Download CV")} isDownloadButton={true} file={file} />
-              </div>
-            </div>
           </div>
         </header>
       )}
